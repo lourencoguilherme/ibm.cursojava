@@ -48,5 +48,12 @@ public class Programa {
         System.out.println(alunoAgathaComObjectNull);
 
 
+        alunoAgathaComString.somaIdadeUmAno();
+        System.out.println(alunoAgathaComString);
+
+        alunoAgathaComString.somaIdade(200);
+        System.out.println(alunoAgathaComString);
+
+
     }
 }

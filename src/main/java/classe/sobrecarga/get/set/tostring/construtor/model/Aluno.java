@@ -83,4 +83,14 @@ public class Aluno {
                 ", cpf: " + cpf +
                 '.';
     }
+
+
+    public void somaIdadeUmAno() {
+        this.idade = this.idade+1;
+    }
+
+    public void somaIdade(Integer quantidadeDeAnos) {
+        this.idade = this.idade+quantidadeDeAnos;
+    }
+
 }
