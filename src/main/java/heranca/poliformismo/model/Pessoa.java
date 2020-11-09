@@ -1,6 +1,6 @@
 package heranca.poliformismo.model;
 
-public class Pessoa extends Idade {
+public class Pessoa implements Idade {
     private String nome;
     private Integer idade;
     private Long cpf;
