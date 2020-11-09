@@ -1,4 +1,4 @@
-package abstrata.model;
+package heranca.poliformismo.model;
 
 public class Pessoa extends Idade {
     private String nome;

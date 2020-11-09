@@ -1,7 +1,7 @@
-package abstrata;
+package heranca.poliformismo;
 
-import abstrata.model.Aluno;
-import abstrata.model.Professor;
+import heranca.poliformismo.model.Aluno;
+import heranca.poliformismo.model.Professor;
 
 public class Programa {
 

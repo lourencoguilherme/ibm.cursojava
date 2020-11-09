@@ -1,4 +1,4 @@
-package abstrata.model;
+package heranca.poliformismo.model;
 
 public abstract class Idade {
 

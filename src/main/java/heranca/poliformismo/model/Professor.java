@@ -1,4 +1,4 @@
-package abstrata.model;
+package heranca.poliformismo.model;
 
 public class Professor extends Pessoa {
     public Professor() {
