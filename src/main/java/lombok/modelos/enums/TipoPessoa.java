@@ -2,13 +2,14 @@ package lombok.modelos.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.exceptions.TipoPessoaException;
 
 @Getter
 @AllArgsConstructor
 public enum TipoPessoa {
 
-    PESSOA_FISICA(1, "Pessoa Física"),
-    PESSOA_JURIDICA(2, "Pessoa Jurídica");
+    PESSOA_FISICA(1, "PESSOA_FISICA"),
+    PESSOA_JURIDICA(2, "PESSOA_JURIDICA");
 
     private int cod;
     private String descricao;
@@ -25,4 +26,16 @@ public enum TipoPessoa {
         }
         throw new IllegalArgumentException("Id inválido " + id);
     }
+
+    public static TipoPessoa toEnum(String codEnum) {
+
+        for (TipoPessoa value : TipoPessoa.values()) {
+            if(value.getDescricao().equalsIgnoreCase(codEnum)) {
+                return value;
+            }
+        }
+
+        throw new TipoPessoaException("Tipo pessoa inválida ou não cadastrada " + codEnum);
+    }
+
 }
