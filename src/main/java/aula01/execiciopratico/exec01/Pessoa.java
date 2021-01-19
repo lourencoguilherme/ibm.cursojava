@@ -32,7 +32,14 @@ public class Pessoa {
     }
 
     public Integer calcularIdade() {
-        return LocalDate.now().compareTo(this.getDataNascimento());
+        try{
+            return LocalDate.now().compareTo(this.getDataNascimento());
+        }catch (NullPointerException ex) {
+            System.out.println("Idade da pessoa ainda não foi informada!");
+
+            return 0;
+        }
+
     }
 
 

@@ -36,5 +36,21 @@ public class ProgramaPessoa {
 
         pessoa2.mostraDadosPessoa();
 
+
+
+        //Tratamento de exceptions
+
+
+        Pessoa pessoaException = new Pessoa.PessoaBuilder()
+                .tipoPessoa(TipoPessoa.PESSOA_JURIDICA)
+                .altura(20.4f)
+//                .dataNascimento(LocalDate.now())
+                .idade(12)
+                .nome("Nome builder")
+                .build();
+
+        pessoaException.mostraDadosPessoa();
+
+
     }
 }
