@@ -1,4 +1,4 @@
-package aula01.execiciopratico;
+package aula01.execiciopratico.exec01;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

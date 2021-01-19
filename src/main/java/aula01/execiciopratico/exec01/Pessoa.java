@@ -1,4 +1,4 @@
-package aula01.execiciopratico;
+package aula01.execiciopratico.exec01;
 
 import lombok.*;
 
@@ -34,4 +34,6 @@ public class Pessoa {
     public Integer calcularIdade() {
         return LocalDate.now().compareTo(this.getDataNascimento());
     }
+
+
 }
